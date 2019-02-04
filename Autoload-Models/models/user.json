@@ -4,49 +4,5 @@
     "title": "mr",
     "first": "philippe",
     "last": "ennis"
-  },
-  "location": {
-    "street": "8974 frederick ave",
-    "city": "sherbrooke",
-    "state": "alberta",
-    "postcode": "F1D 1H4",
-    "coordinates": {
-      "latitude": "-63.6967",
-      "longitude": "-4.7786"
-    },
-    "timezone": {
-      "offset": "+5:00",
-      "description": "Ekaterinburg, Islamabad, Karachi, Tashkent"
-    }
-  },
-  "email": "philippe.ennis@example.com",
-  "login": {
-    "uuid": "c4ae7b09-680c-42e0-904f-7379bb6d614e",
-    "username": "brownzebra501",
-    "password": "1812",
-    "salt": "zFcXi5ae",
-    "md5": "cd6c3df2e7e32078cdaa090f9c9ca7b3",
-    "sha1": "c0157a1a1276d4adf180f286fae2169b45151620",
-    "sha256": "d8125294077544db0d6543c573adbadfca126f4819973a4087cd70430b44b411"
-  },
-  "dob": {
-    "date": "1956-02-24T05:43:36Z",
-    "age": 62
-  },
-  "registered": {
-    "date": "2009-10-12T09:20:22Z",
-    "age": 9
-  },
-  "phone": "774-840-2912",
-  "cell": "584-876-4640",
-  "id": {
-    "name": "",
-    "value": null
-  },
-  "picture": {
-    "large": "https://randomuser.me/api/portraits/men/62.jpg",
-    "medium": "https://randomuser.me/api/portraits/med/men/62.jpg",
-    "thumbnail": "https://randomuser.me/api/portraits/thumb/men/62.jpg"
-  },
-  "nat": "CA"
+  }
 }
