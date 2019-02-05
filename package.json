@@ -13,8 +13,8 @@
     "lint": "./node_modules/.bin/eslint *.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Brian Olencki",
+  "license": "MIT",
   "dependencies": {
     "camelcase": "^5.0.0",
     "commander": "^2.19.0",
