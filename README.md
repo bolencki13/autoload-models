@@ -19,7 +19,7 @@ in the IDE. Just add a new "Run Script Phase" with:
 
 ```bash
 if which autoload-models >/dev/null; then
-  autoload-models --project . --path './models/' --output './autoload-models-test/models/'
+  autoload-models --project . --path './models/' --output './<project-name>/models/'
 else
   echo "warning: auto-load-models is not installed, download from https://github.com/bolencki13/autoload-models"
 fi
