@@ -1,6 +1,6 @@
 # autoload-models
 
-autoload-models is a Nodejs Command Line Tool for translating json files into swift models automatically.
+autoload-models is a Nodejs Command Line Tool for translating json files into swift models automatically. This will add the newly created models to your xcode project.
 
 ## Installation
 
