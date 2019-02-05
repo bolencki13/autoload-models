@@ -18,6 +18,7 @@
   "dependencies": {
     "camelcase": "^5.0.0",
     "commander": "^2.19.0",
+    "quicktype": "^15.0.171",
     "xcode": "^2.0.0"
   },
   "devDependencies": {
