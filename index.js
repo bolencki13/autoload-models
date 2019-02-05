@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const camelCase = require('camelcase')
 const { execSync } = require('child_process')
 const fs = require('fs')
