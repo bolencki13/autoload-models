@@ -6,7 +6,8 @@
     "autoload-models": "index.js"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "./services"
   ],
   "scripts": {
     "lint": "./node_modules/.bin/eslint *.js",
