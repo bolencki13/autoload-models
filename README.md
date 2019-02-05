@@ -30,5 +30,11 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
+## Resources
+A number of resources were used for the development of this package. Here are some:
+
+* https://github.com/rnpm/rnpm-plugin-link/tree/master/src/ios
+* https://github.com/apache/cordova-node-xcode
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
