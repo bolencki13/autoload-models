@@ -6,6 +6,7 @@ const fs = require('fs')
 const path = require('path')
 const program = require('commander')
 const p = require('./package.json')
+const quicktype = require('quicktype')
 
 const xcode = require('xcode')
 const services = require('./services')
@@ -43,7 +44,7 @@ for (let x = 0; x < jsonContents.length; x++) {
   let outFilePath = path.join(output, fileName + '.swift')
   let name = camelCase(fileName, { pascalCase: true }) // normalize file name ('phone-number' => 'PhoneNumber')
 
-  execSync(`quicktype ${inFilePath} -t ${name} -l swift -o ${outFilePath}`)
+  quicktype.main(`${inFilePath} -t ${name} -l swift -o ${outFilePath}`)
 
   project.addSourceFile(outFilePath, undefined, kGroupValue)
 }
