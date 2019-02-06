@@ -1,6 +1,6 @@
 {
   "name": "autoload-models",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Dynamically load the models into the project based on json files",
   "bin": {
     "autoload-models": "index.js"
@@ -17,8 +17,8 @@
   "license": "MIT",
   "dependencies": {
     "camelcase": "^5.0.0",
+    "command-exists": "^1.2.8",
     "commander": "^2.19.0",
-    "quicktype": "^15.0.171",
     "xcode": "^2.0.0"
   },
   "devDependencies": {

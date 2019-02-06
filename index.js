@@ -6,7 +6,6 @@ const fs = require('fs')
 const path = require('path')
 const program = require('commander')
 const p = require('./package.json')
-const quicktype = require('quicktype')
 
 const xcode = require('xcode')
 const services = require('./services')
@@ -18,6 +17,10 @@ program
   .option('--path [path]', 'Set the path (defaults to ./models/)')
   .option('--output [output]', 'Set the output path (default to "path")')
   .parse(process.argv)
+
+if (!require('command-exists').sync('quicktype')) {
+  throw new Error('auto-load-models is not installed, download from https://quicktype.io/')
+}
 
 const input = path.resolve(program.path || './models/')
 const output = path.resolve(program.output || input)
@@ -44,7 +47,7 @@ for (let x = 0; x < jsonContents.length; x++) {
   let outFilePath = path.join(output, fileName + '.swift')
   let name = camelCase(fileName, { pascalCase: true }) // normalize file name ('phone-number' => 'PhoneNumber')
 
-  quicktype.main(`${inFilePath} -t ${name} -l swift -o ${outFilePath}`)
+  execSync(`quicktype ${inFilePath} -t ${name} -l swift -o ${outFilePath}`)
 
   project.addSourceFile(outFilePath, undefined, kGroupValue)
 }
